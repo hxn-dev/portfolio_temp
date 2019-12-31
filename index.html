@@ -509,17 +509,13 @@
                 return reference.getAttribute('title')
             },
             onTrigger(instance, event) {
-                //instance.reference.style.transform = 'scale(1.2)'
                 instance.reference.classList.remove('scaledown')
                 instance.reference.classList.add('scaleup')
             },
             onUntrigger(instance, event) {
-                //instance.reference.style.transform = 'scale(1)'
                 instance.reference.classList.remove('scaleup')
                 instance.reference.classList.add('scaledown')
             },
-
-            //
         });
 
         var scroll = new SmoothScroll('a[href*="#"]');
